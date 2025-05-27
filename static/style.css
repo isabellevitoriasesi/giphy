@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+body {
+    background: linear-gradient(to right, #e0ffe9, #d0f5eb);
+    font-family: 'Quicksand', sans-serif;
+    color: #2b5744;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8em;
+    color: #1f3d2b;
+    margin-bottom: 40px;
+    background: linear-gradient(to right, #4ec68e, #1f9d6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+form {
+    margin-bottom: 40px;
+}
+
+input[type="text"] {
+    padding: 12px 15px;
+    width: 60%;
+    max-width: 320px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    box-shadow: 0 0 8px #b7e4ce;
+    background-color: #ffffff;
+    outline: none;
+}
+
+button {
+    padding: 12px 24px;
+    background: #59c49c;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #3fa580;
+}
+
+.gif-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.gif-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.gif-card:hover {
+    transform: scale(1.03);
+}
+
+.gif-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gif-card a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 14px;
+    background-color: #088d6a;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.gif-card a:hover {
+    background-color: #05654e;
+}
+
+

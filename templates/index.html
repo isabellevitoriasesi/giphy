@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GIFs para WhatsApp</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>💚 Buscar GIFs 💚</h1>
+
+        <form method="POST">
+            <input type="text" name="termo" placeholder="Digite algo fofo..." required>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <div class="gif-grid">
+            {% for gif in gifs %}
+                <div class="gif-card">
+                    <img src="{{ gif }}" alt="GIF">
+                    <a href="https://wa.me/?text={{ gif }}" target="_blank">Enviar pelo WhatsApp</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
